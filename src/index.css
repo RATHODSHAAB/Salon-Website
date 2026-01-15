@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Poppins */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Zalando";
+  src: url("./assets/fonts/ZalandoSansExpanded-Regular.ttf") format("truetype");
+  font-weight: 700;
+}
+
+/* Bebas Neue */
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+/* Bebas Neue */
+@font-face {
+  font-family: "Manrope";
+  src: url("./assets/fonts/src/assets/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+}
+
+
+.dashboard-bg {
+  background-image: url("assets/images/model.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gallery-bg {
+  background-image: url("assets/images/gallery-bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
