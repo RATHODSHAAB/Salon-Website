@@ -8,11 +8,11 @@ export const Navbar = () => {
   return (
     <nav className="font-black w-100% relative z-50">
       {/* TOP BAR */}
-      <div className="max-w-9xl  px-4 h-26 flex  bg-gray-200 justify-around relative">
+      <div className="max-w-9xl  px-4 h-30 flex  bg-gray-200 justify-around relative">
 
         {/* LOGO */}
         <Link to="/">
-          <img src={lola} alt="Logo" className="h-34 mt-1" />
+          <img src={lola} alt="Logo" className="h-36 mt-1" />
         </Link>
 
         {/* Right menu & buttons for Desktop*/}
@@ -30,16 +30,17 @@ export const Navbar = () => {
 
           {/* Desktop button */}
             <div
-                className="hidden md:block border border-gray-600 px-4 py-2  hover:bg-white hover:text-black transition"
+                className="hidden md:block border border-gray-600 px-4 py-2  hover:bg-white cursor-pointer hover:text-black transition"
                 style={{ fontFamily: "Zalando" }}>
                     Book Appointment
             </div>
 
           {/* Mobile hamburger / cross */}
           <button
-            className="md:hidden  text-3xl z-50"
+            className="md:hidden  text-3xl z-50 cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
           >
+            {/* Conditonal rendering using useState */}
             {isOpen ? "✕" : "☰"}
           </button>
         </div>
@@ -83,9 +84,10 @@ export const Navbar = () => {
           Contact
         </Link>
 
-        <div className="border border-gray-600 px-6 py-2 mt-6">
+        <div className="border border-gray-600 px-6 py-2 mt-6 hover:cursor-pointer">
           Book Appointment
         </div>
+      
       </div>
     </nav>
   )

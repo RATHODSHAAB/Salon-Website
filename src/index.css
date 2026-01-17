@@ -32,6 +32,18 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
+}
+/* By default, the element is hidden on small screens */
+.dashboard-bg {
+  display: none;
+}
+
+/* For medium screens and larger (e.g., min-width: 768px, a common breakpoint) */
+@media (min-width: 768px) {
+  .dashboard-bg {
+    display: block; /* Make the element visible as a block */
+  }
 }
 
 .gallery-bg {
