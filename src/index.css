@@ -22,32 +22,27 @@
 /* Bebas Neue */
 @font-face {
   font-family: "Manrope";
-  src: url("./assets/fonts/src/assets/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  src: url("./assets/fonts/src/assets/fonts/Manrope-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 400;
 }
 
-
 .dashboard-bg {
-  background-image: url("assets/images/model.jpeg");
+  background-image: url("assets/images/dashborad/dashboard-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
 /* By default, the element is hidden on small screens */
-.dashboard-bg {
-  display: none;
-}
-
-/* For medium screens and larger (e.g., min-width: 768px, a common breakpoint) */
-@media (min-width: 768px) {
-  .dashboard-bg {
-    display: block; /* Make the element visible as a block */
-  }
-}
 
 .gallery-bg {
   background-image: url("assets/images/gallery-bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services-bg {
+  background-image: url("assets/images/services-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
