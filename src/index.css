@@ -46,3 +46,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.texture-bg {
+  background-image: url("assets/images/dashborad/texture.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

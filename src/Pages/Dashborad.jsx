@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { home_features } from "../Components/images";
 import flower_bg from "../assets/images/dashborad/flower-bg.webp";
 import outdoor from "../assets/images/dashborad/outdoor.jpg";
+import vertical from "../assets/images/dashborad/vertical.jpg";
 import { ImagesDiv_home } from "../Components/CompImage";
 import { motion } from "framer-motion";
 import { MapEmbeded } from "./MapIntegration";
@@ -25,12 +26,12 @@ export const Dashborad = () => {
           {/* TEXT CONTAINER */}
           <div
             className="
-      hidden md:block
-      absolute
-      left-6 md:left-12 lg:left-18
-      top-24 md:top-40 lg:top-52
-      text-left
-    "
+          hidden md:block
+          absolute
+          left-6 md:left-12 lg:left-18
+          top-24 md:top-40 lg:top-52
+          text-left
+        "
             style={{ fontFamily: "Zalando" }}
           >
             {/* SMALL HEADING */}
@@ -192,7 +193,6 @@ export const Dashborad = () => {
               </div>
             </div>
 
-
             {/* 3. Contact form */}
             <div className="px-8 mt-6 md:mt-1 lg:mt-0">
               <h1 className="text-5xl tracking-wide">Contact Us</h1>
@@ -217,6 +217,68 @@ export const Dashborad = () => {
                     Rich Looks Salon Tunwal Plaza, Bajaj Rd
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Meet Out Team */}
+        <div
+          className="texture-bg min-h-[30vh] md:min-h-[40vh] lg:min-h-screen w-full mt-24 flex justify-center
+          items-center px-4"
+        >
+          <div className="max-w-5xl mx-auto bg-white text-black p-6 mt-6 md:mt-0  md:p-10 shadow-2xl rounded-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              {/* Image Section */}
+              <div className="flex justify-center">
+                <img
+                  src={vertical}
+                  alt="The Best Salon in Sikar"
+                  className="w-full max-w-sm object-cover"
+                />
+              </div>
+
+              {/* Content Section */}
+              <div className="text-center md:text-left max-w-xl mx-auto">
+                <p className="tracking-widest text-sm text-gray-500 text-center">
+                  ALL ABOUT
+                </p>
+
+                <h1
+                  className="text-3xl md:text-4xl font-light mt-3 tracking-wide text-center"
+                  style={{ fontFamily: "Zalando" }}
+                >
+                  RICH LOOK
+                </h1>
+                <h1
+                  className="text-3xl md:text-4xl font-light tracking-widest text-center"
+                  style={{ fontFamily: "Zalando" }}
+                >
+                  SALON
+                </h1>
+
+                <p className="mt-6 text-gray-700 leading-6 text-center">
+                  At Lola Hair Studio, we are committed to giving every guest
+                  the very best experience. Each service is designed to be
+                  luxurious, personalized, and perfectly suited to your needs.
+                  Your appointment begins with a detailed consultation to
+                  understand your goals, whether you’re here for a precision
+                  cut, dimensional color, or a customized texture service.
+                </p>
+                <p className="mt-4 text-gray-700 leading-6 text-center">
+                  Our stylists use advanced techniques and high quality products
+                  to achieve results that are both beautiful and healthy. Before
+                  you leave, we provide expert tips and product recommendations
+                  so you can maintain your look at home. We’re truly
+                  hair-obsessed and passionate about helping you love your
+                  style.
+                </p>
+                <Link>
+                <div className="flex justify-center items-center">
+                  <div className="text-center w-50 tracking-wide mt-6 border-2  px-4 text-xl py-4 bg-gray-600 text-white">
+                    MEET OUR TEAM
+                  </div>
+                </div>
+                </Link>
               </div>
             </div>
           </div>

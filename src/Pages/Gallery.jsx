@@ -45,6 +45,8 @@ export const Gallery = () => {
       <div className="flex justify-center px-2 mb-10">
         <CompGaller title={"THE LOOKS"} images={gallery_looks}></CompGaller>
       </div>
+      {/* Integrate Instagram  */}
+      {/* One more thing at last  */}
     </>
   );
 };
