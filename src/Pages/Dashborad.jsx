@@ -11,6 +11,7 @@ import vertical from "../assets/images/dashborad/vertical.jpg";
 import { ImagesDiv_home } from "../Components/CompImage";
 import { motion } from "framer-motion";
 import { MapEmbeded } from "./MapIntegration";
+import { Footer } from "../Components/Foooter";
 
 export const Dashborad = () => {
   return (
@@ -283,6 +284,10 @@ export const Dashborad = () => {
             </div>
           </div>
         </div>
+           {/* Footer */}
+            <div>
+              <Footer ></Footer>
+            </div>
       </div>
 
       {/* Footer:- Permanent */}
